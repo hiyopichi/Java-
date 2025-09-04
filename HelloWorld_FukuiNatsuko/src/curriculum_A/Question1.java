@@ -8,23 +8,23 @@ public class Question1 {
 		 * 各型の変数を宣言し、初期値を設定する
 		 */
 		// 変数byteNumの初期値を設定
-		byte byteNum;
+		byte byteNum = 0;
 		// 変数shortNumの初期値を設定
-		short shortNum;
+		short shortNum = 0;
 		// 変数intNumの初期値を設定
-		int intNum;
+		int intNum = 0;
 		// 変数longNumの初期値を設定
-		long longNum;
+		long longNum = 0L;
 		// 変数floatNumの初期値を設定
-		float floatNum;
+		float floatNum = 0.0f;
 		// 変数doubleNumの初期値を設定
-		double doubleNum;
+		double doubleNum = 0.0;
 		// 変数letterの初期値を設定
-		char letter;
+		char letter = '\u0000';
 		// 変数lettersの初期値を設定
-		String letters;
+		String letters = null;
 		//　変数isBooleanの初期値を設定
-		boolean isBoolean;
+		boolean isBoolean = false;
 		
 		/*
 		 * 宣言した各型の変数に指定された値を代入する
@@ -61,7 +61,7 @@ public class Question1 {
 		// 小数点意外の数字を全てかけて出力
 		System.out.println ( byteNum * shortNum * intNum * longNum );
 		// 10.5割る100を出力
-		System.out.println( 10.5/100 );
+		System.out.println( doubleNum/shortNum );
 		// 10引く100をして出力
 		System.out.println( byteNum - shortNum );
 		System.out.println("\n");
@@ -105,11 +105,12 @@ public class Question1 {
 		System.out.println( "整数価格:" + intPrice );
 		System.out.println("\n");
 		
-		// String型の変数numに50を代入
+		// String型の変数numStrに123を代入
 		String numStr = "123";
+		// numStrをint型に変換
 		int numInt = Integer.parseInt(numStr);
 		// 変換後の値:の後ろにnumStr+10した結果をコンソールに表示
-		System.out.println(numInt + ":" + numStr +10 );
+		System.out.println((numInt) + ":" + (numInt+10) );
 		System.out.println("\n");
 		
 		//int型の変変数numに50を代入
@@ -131,7 +132,7 @@ public class Question1 {
 		//int型の変数xに15を代入
 		int x = 15;
 		// xが10以上なら"OK"、そうでなければ"NG"を表示
-		if (x <= 10) {
+		if (x >= 10) {
 			System.out.println("OK");
 		} else {
 			System.out.println("NG");
