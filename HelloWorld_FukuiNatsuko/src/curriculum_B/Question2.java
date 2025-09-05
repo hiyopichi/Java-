@@ -6,27 +6,27 @@ public class Question2 {
 		// TODO 自動生成されたメソッド・スタブ
 		// int型の変数scoreに75を代入
 		int score;
-		score = 75;
+		score = 60;
 		// scoreが60以上なら"合格です！"と表示
-		if (score >= 60 );
+		if (score >= 60 )
 		System.out.println("合格です！");
 		System.out.println("\n");
 		
 		// int型の変数ageに25を代入
 		int age;
-		age = 25;
+		age = 40;
 		//ageが20以上30以下なら"適正年齢です"と表示、それ以外の場合は"対象外です"と表示
 		if (age >= 20 && age <=30 ) {System.out.println("適正年齢です") ;}
-		else if ( age <=20 && age>=30 ) { System.out.println("対象外です");}
+		else  { System.out.println("対象外です");}
 		System.out.println("\n");
 		
 		// 定数ageに18を代入
-		age = 18;
+		age = 50;
 		/*ageが20以上なら成人ですと表示
 		 * ageが13以上19以下なら"ティーンエイジャーです"と表示
 		 *ageが12以下なら"子供です"と表示
 		*/
-		if (age <= 20) { System.out.println("成人です");}
+		if (age >= 20) { System.out.println("成人です");}
 		else if (age >=13 && age <=19 ) { System.out.println("ティーンエイジャーです");}
 		else if (age <12 ) { System.out.println("子供です");}
 		System.out.println("\n");
@@ -70,7 +70,7 @@ public class Question2 {
 		
 		// 入力がnullまたは空文字("")のときに「入力が無効です」と表示する処理
 		String str = null;
-		if (str != null && str.equals(""));
+		if (str != null && str.equals(""))
 			{System.out.println("入力が無効です");}
 		System.out.println("\n");
 		
@@ -113,10 +113,10 @@ public class Question2 {
 					System.out.println("春");
 					break;
 				case 6,7,8:
-					System.out.println("秋");
+					System.out.println("夏");
 					break;
 				case 9,10,11:
-					System.out.println("冬");
+					System.out.println("秋");
 					break;
 				default:
 					System.out.println("無効な月です");
