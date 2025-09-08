@@ -1,5 +1,6 @@
 package curriculum_B;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Question3 {
@@ -91,28 +92,71 @@ public class Question3 {
 		Scanner scanner = new Scanner(System.in);
 		int sca = 0;
 		while (true) {
-			sca = scanner.nextInt();
+		sca = scanner.nextInt();
 			if (sca == 0) {
 				System.out.println("終了しました");
 				{
 					break;
 				}
 			}
-			System.out.println("\n");
+		}
+		System.out.println("\n");
 
-			// Q11 for文を使用して画像の通りに出力
-			int aa = 1;
-			int bb = 1;
-			String cc = String.format("%02d", aa);
-			String dd = String.format("%02d", bb);
-			int ee = aa * bb;
-			for (; aa <= 9; aa++) {
-				for (; bb <= 9; bb++) {
-					System.out.println(cc + "*" + dd + "=" + ee);
+		// Q11 for文を使用して画像の通りに出力
+		for (int aa = 1; aa <= 9; aa++) {
+			for (int bb = 1; bb <= 9; bb++) {
+				if (bb <= 8) {
+					int ee = aa * bb;
+					String cc = String.format("%02d", aa);
+					String dd = String.format("%02d", bb);
+					String gg = String.format("%02d", ee);
+					System.out.print(cc + " * " + dd + " = " + gg + " || ");
+				} else {
+					int ee = aa * bb;
+					String cc = String.format("%02d", aa);
+					String dd = String.format("%02d", bb);
+					String gg = String.format("%02d", ee);
+					System.out.print(cc + " * " + dd + " = " + gg);
 				}
 			}
-
+			System.out.println();
 		}
+		System.out.println("\n");
+
+		// Q12　入力された商品の残り台数が出力されるシステムを作成
+		Random rand = new Random();
+		Scanner input = new Scanner(System.in);
+		String input_text = input.nextLine();
+		String[] items = input_text.split("、");
+		int x = rand.nextInt(12);
+		int tv = rand.nextInt(12);
+		int dis = 11-tv;
+		for ( String good : items ) {
+			switch ( good ) {
+			case "パソコン":
+				System.out.println( good + "の残り台数は" + x + "台です");
+				break;
+			case "冷蔵庫":
+				System.out.println( good + "の残り台数は" + x + "台です");
+				break;
+			case "扇風機":
+				System.out.println( good + "の残り台数は" + x + "台です");
+				break;
+			case "洗濯機":
+				System.out.println( good + "の残り台数は" + x + "台です");
+				break;
+			case "加湿器":
+				System.out.println( good + "の残り台数は" + x + "台です");
+				break;
+			case "テレビ", "ディスプレイ":
+				int y = good.equals("テレビ") ? tv : dis;
+				System.out.println( good + "の残り台数は" + y + "台です");
+				break;
+			default:
+				System.out.println( good + "は指定の商品ではありません");
+			}
+		}
+
 	}
 
 }
