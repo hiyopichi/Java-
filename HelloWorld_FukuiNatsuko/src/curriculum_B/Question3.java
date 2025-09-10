@@ -10,17 +10,13 @@ public class Question3 {
 		// TODO 自動生成されたメソッド・スタブ
 		// Q1 for文を使って1から10までの数字を1つずつ表示
 		for (int i = 1; i <= 10; i++) {
-			{
-				System.out.println(i);
-			}
+			System.out.println(i);
 		}
 		System.out.println("\n");
 
 		// Q2 for文を使って2から20までの偶数を1つずつ表示
 		for (int n = 2; n <= 20; n = n + 2) {
-			{
-				System.out.println(n);
-			}
+			System.out.println(n);
 		}
 		System.out.println("\n");
 
@@ -89,7 +85,7 @@ public class Question3 {
 			scan.nextLine();
 			if (sca == 0) {
 				System.out.println("終了しました");
-					break;
+				break;
 			}
 		}
 		System.out.println("\n");
@@ -152,6 +148,7 @@ public class Question3 {
 			}
 		}
 
+		scan.close();
 	}
 
 }
