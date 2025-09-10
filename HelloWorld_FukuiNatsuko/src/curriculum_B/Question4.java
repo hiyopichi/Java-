@@ -43,13 +43,13 @@ public class Question4 {
 			if (maxI < h[j]) {
 				maxI = h[j];
 			}
-		}
-		System.out.println(maxI);
-		for (int j = 1; j < h.length; j++) {
-			if (minI > h[j]) {
-				minI = h[j];
+			{
+				if (minI > h[j]) {
+					minI = h[j];
+				}
 			}
 		}
+		System.out.println(maxI);
 		System.out.println(minI);
 		System.out.println("\n");
 
@@ -151,5 +151,6 @@ public class Question4 {
 				}
 			}
 		}
+		scan.close();
 	}
 }
