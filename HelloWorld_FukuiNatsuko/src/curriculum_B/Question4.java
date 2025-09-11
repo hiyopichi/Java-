@@ -43,10 +43,8 @@ public class Question4 {
 			if (maxI < h[j]) {
 				maxI = h[j];
 			}
-			{
-				if (minI > h[j]) {
-					minI = h[j];
-				}
+			if (minI > h[j]) {
+				minI = h[j];
 			}
 		}
 		System.out.println(maxI);
