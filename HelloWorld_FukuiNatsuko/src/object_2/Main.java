@@ -5,7 +5,7 @@ public class Main {
 		Employee empl = new Employee();
 		empl.employee = "E001";
 		empl.name = "佐藤太郎";
-		empl.shouInfo();
+		empl.showInfo();
 	}
 
 }
