@@ -1,7 +1,7 @@
 package object_7;
 
 interface Payable {
-	int SalaryCalculator(int hoursWorked);
+	int salaryCalculator(int hoursWorked);
 }
 
 abstract class Employee implements Payable {
@@ -22,7 +22,7 @@ class FullTime extends Employee {
 	}
 
 	@Override
-	public int SalaryCalculator(int hoursWorked) {
+	public int salaryCalculator(int hoursWorked) {
 		int hourlyRate = 1200;
 		return hoursWorked * hourlyRate;
 
@@ -35,7 +35,7 @@ class Contract extends Employee {
 	}
 
 	@Override
-	public int SalaryCalculator(int hoursWorked) {
+	public int salaryCalculator(int hoursWorked) {
 		int hourlyRate = 1000;
 		return hoursWorked * hourlyRate;
 	}
@@ -43,7 +43,7 @@ class Contract extends Employee {
 
 class SalaryReporter {
 	public void report(Employee e,int hoursWorked) {
-		System.out.println(e.getName() + " の給料は" + e.SalaryCalculator(hoursWorked) + " 円");
+		System.out.println(e.getName() + " の給料は" + e.salaryCalculator(hoursWorked) + " 円");
 	}
 }
 
