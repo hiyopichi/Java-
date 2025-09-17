@@ -1,11 +1,21 @@
-プレイヤーひより
-ひよりのステータス
-HP:73 AT:14 SP:3
-Daemonの攻撃　ひよりの残りHPは61
-Daemonの攻撃　ひよりの残りHPは49
-Daemonの攻撃　ひよりの残りHPは37
-Daemonの攻撃　ひよりの残りHPは25
-Daemonの攻撃　ひよりの残りHPは13
-Daemonの攻撃　ひよりの残りHPは1
-Daemonの攻撃　ひよりの残りHPは-11
-Daemonの勝ち！
+プレイヤーあああああ
+あああああのステータス
+HP:43 AT:5 SP:8
+あああああの攻撃　Daemonの残りHPは80
+あああああの攻撃　Daemonの残りHPは75
+あああああの攻撃　Daemonの残りHPは70
+あああああの攻撃　Daemonの残りHPは65
+あああああの攻撃　Daemonの残りHPは60
+あああああの攻撃　Daemonの残りHPは55
+あああああの攻撃　Daemonの残りHPは50
+あああああの攻撃　Daemonの残りHPは45
+あああああの攻撃　Daemonの残りHPは40
+あああああの攻撃　Daemonの残りHPは35
+あああああの攻撃　Daemonの残りHPは30
+あああああの攻撃　Daemonの残りHPは25
+あああああの攻撃　Daemonの残りHPは20
+あああああの攻撃　Daemonの残りHPは15
+あああああの攻撃　Daemonの残りHPは10
+あああああの攻撃　Daemonの残りHPは5
+あああああの攻撃　Daemonの残りHPは0
+あああああの勝ち！

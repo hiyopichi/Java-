@@ -53,6 +53,7 @@ public class Question7 {
 	}
 }
 
+//共通のキャラクター情報を管理
 class Character {
 	int hp;
 	int at;
@@ -66,7 +67,7 @@ class Character {
 		this.at = rand.nextInt(20) + 1;
 		this.sp = rand.nextInt(10) + 1;
 	}
-
+// Daemonステータスをテキストファイルから読み込む
 	public static Character loadDaemon() {
 		Character daemon = new Character();
 		try (InputStream is = Question7.class.getResourceAsStream("daemon_status.txt");
@@ -84,7 +85,7 @@ class Character {
 		return daemon;
 	}
 }
-
+// battle_logに記録するクラス
 class BattleLog {
 	private PrintWriter writer;
 
