@@ -38,6 +38,7 @@ public class Question6 {
 				System.out.println("あなたの負け…");
 			}
 		}
+		scanner.close();
 	}
 }
 
