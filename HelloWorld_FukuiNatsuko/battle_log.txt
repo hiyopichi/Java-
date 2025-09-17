@@ -1,0 +1,11 @@
+プレイヤーひより
+ひよりのステータス
+HP:73 AT:14 SP:3
+Daemonの攻撃　ひよりの残りHPは61
+Daemonの攻撃　ひよりの残りHPは49
+Daemonの攻撃　ひよりの残りHPは37
+Daemonの攻撃　ひよりの残りHPは25
+Daemonの攻撃　ひよりの残りHPは13
+Daemonの攻撃　ひよりの残りHPは1
+Daemonの攻撃　ひよりの残りHPは-11
+Daemonの勝ち！
